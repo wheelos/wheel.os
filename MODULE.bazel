@@ -6,7 +6,7 @@
 ###############################################################################
 
 module(
-    name = "WheelOS",
+    name = "wheel.os",
     version = "1.0.0",
     compatibility_level = 1,
 )
