@@ -16,10 +16,12 @@
 
 ## Commands
 
-- Import source repositories: `vcs import src < wheelos.repos`
+- Import Apollo-Lite: `vcs import src < wheelos.repos`
+- Import its source libraries: `cd src/apollo-lite && vcs import pkgs < wheelos.repos`
 - Check checkout status: `vcs status src`
 - Build the default Apollo-Lite install target: `./scripts/build.sh`
 - Build a specific target: `./scripts/build.sh @core//cyber/...`
+- Build against local source checkouts: `./scripts/build.sh --config=dev @core//cyber/...`
 - Check the build wrapper syntax: `bash -n scripts/build.sh`
 
 ## Knowledge
@@ -32,3 +34,4 @@
 
 - Workspace/build validation: `.agents/skills/workspace-validation/SKILL.md`
 - Change review: `.agents/skills/review/SKILL.md`
+- Multi-repository Bzlmod development: `.agents/skills/multi-repository-bzlmod-development/SKILL.md`
